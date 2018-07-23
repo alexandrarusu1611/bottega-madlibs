@@ -29,7 +29,7 @@ class Card extends Component{
         super()
 
         this.state = INITIAL_STATE;
-        
+
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
     }
@@ -76,7 +76,9 @@ class Card extends Component{
             <form onSubmit={this.handleFormSubmit} className="card">
                 <div className="card__inputs">
                 {
-                    inputData.map(data => Input( (data), this.handleInputChange ))
+                    inputData.map((data, index) => { 
+                        return Input( (data), this.handleInputChange, index ) 
+                    })
                 }
                 </div>
 
