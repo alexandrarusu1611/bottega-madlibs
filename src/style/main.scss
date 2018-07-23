@@ -1,5 +1,12 @@
 .home{
     background-color: rgba(207, 207, 207, 0.1);
+    display: grid;
+    justify-items: center;
+    grid-template-rows: [header-s] 218 [header-e card-s] minmax(736px, 994px) [card-e];
+}
+
+.header{
+    align-self: center;
 }
 
 .card {
@@ -12,22 +19,27 @@
     
 
     &__inputs {
-        background-color: skyblue;
+        background-color: aliceblue;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
     }
 }
 
-.inputs {
-    &__title {
+.input {
+    display:grid;
+    grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
 
+    &__title {
+        grid-column: input-s/input-e;
     }
     input{
-
+        grid-column: input-s/input-e;
     }
     &__number {
-
+        grid-column: number-s/number-e;
     }
 }
 
