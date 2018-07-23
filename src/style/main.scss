@@ -7,5 +7,27 @@
     width: 1240px;
     box-shadow: 0 4px 30px 0 rgba(0,0,0,0.1);
     border-radius:6px;
+    display:grid;
+    grid-template-rows: 1fr 50px;
+    
+
+    &__inputs {
+        background-color: skyblue;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.inputs {
+    &__title {
+
+    }
+    input{
+
+    }
+    &__number {
+
+    }
 }
 

@@ -4,7 +4,7 @@ import Input from './input';
 import Content from './content';
 
 const INITIAL_STATE = {
-    color: '',
+            color: '',
             pluralNoun: '',
             adjectiveOne: '',
             celebOne: '',
