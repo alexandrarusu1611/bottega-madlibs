@@ -51,12 +51,14 @@ clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
 }
 
 .card {
+    font-family: 'Montserrat';
     height: 736px;
     width: 1240px;
     box-shadow: 0 4px 30px 0 rgba(0,0,0,0.1);
-    border-radius:6px;
+    border-radius: 5px;
     display:grid;
     grid-template-rows: 1fr 50px;
+    
     
 
     &__inputs {
@@ -68,6 +70,29 @@ clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
         justify-items: center;
         align-items: center;
         padding-top:66px;
+    }
+
+    button {
+        font-family: 'Montserrat';
+        height:50px;
+        width:300px;
+        border-radius:4px;
+        color:white;
+        font-size: 22px;
+        text-align: center;
+        justify-self: center;
+    }
+
+    button:focus {
+        outline:none;
+    }
+
+    &__generate{
+        background-color: #00CB79;
+    }
+
+    &__clear{
+        background-color: #45B0E5;
     }
 }
 
