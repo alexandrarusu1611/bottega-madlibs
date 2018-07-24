@@ -7,6 +7,9 @@
 
 .header{
     align-self: center;
+    font-family: 'Montserrat';  
+    text-align:center;     
+    color:white;
 
     &__skew{
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 25%, 0 50%);
@@ -17,7 +20,7 @@
         position:absolute;
         height:100vh;
         width:100vw;
-        background-color: #444444;
+        background-color:  #444444;
     }
 
     &__border{
@@ -31,6 +34,20 @@ clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
         width:100vw;
         background-color: #00CB79;
     }
+
+    h1 {
+        font-size:36px;
+        font-weight:600;
+        line-height: 44px;
+    }
+
+    p {
+        color:rgba(255, 255, 255, 0.75);
+        width:403px;
+        font-size:15px;
+        font-weight:300;
+        line-height:19px;
+    }
 }
 
 .card {
@@ -43,27 +60,55 @@ clip-path: polygon(0 48%, 100% 23%, 100% 25%, 0 50%);
     
 
     &__inputs {
-        background-color: aliceblue;
+        background-color:white;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 27px);
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap:100px;
         justify-items: center;
         align-items: center;
+        padding-top:66px;
     }
 }
 
 .input {
+    font-family: 'Montserrat';
     display:grid;
     grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
+    height:47px;
 
     &__title {
         grid-column: input-s/input-e;
+        border-top:1px solid #B3B3B3;
+        color: #B3B3B3;
+        font-size:12px;
+        text-align:center;
     }
     input{
         grid-column: input-s/input-e;
+        border:none;
+        font-size:15px;
+        text-align:center;
+        grid-column-gap: 8px;
+        padding:4px 0;
+        &:focus {
+            outline: none;
+        }
     }
     &__number {
         grid-column: number-s/number-e;
+        background-color: #00CB79;
+        color:white;
+        font-size:20px;
+        text-align:center;
+        font-weight:600;
+        line-height:24px;
+        border-radius:50%;
+        height:26px;
+        width:26px;
+        padding-top:2px;
     }
+
+    
 }
 
